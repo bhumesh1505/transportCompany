@@ -1,16 +1,131 @@
-nav {
-  background: radial-gradient(blue,navy);
-  z-index: 5;
-  position: absolute;
-  top:0;
-  overflow-y: hidden;
+/* HTML CSS START */
+html{
+  cursor: url('../images/cursor.png'), auto;
 }
-.sidenav {
-  background: rgba(50, 50, 100, 0.5);
-  text-align: center;
-  padding-top: 7em;
+/* HTML CSS END */
+body:before {
+  pointer-events: none;
 }
-.sidenav>li>a {
-  color: white;
-  font-size: 1.5em;
+/*BODY BACKGROUND START*/
+    #myVideo{
+      position: fixed;
+      top: 0px;
+      width: 100%;
+    }
+    #pageHead{
+        font-size: 45px;
+        color: white;
+        text-shadow: 0 0 50px #0000ff;
+        font-family: sans-serif;
+        text-align: center;
+        z-index: 15;
+    }
+    hr{
+        width: 60%;
+        border: 0;
+        height: 2px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+/*BODY BACKGROUND END*/
+
+/*Services start*/
+#pageContainer{
+    background: rgba(50, 50, 100, 0.9);
+    width: 90%;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5%;
+    margin-top: 5%;
 }
+#content{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #18ffff;
+    text-shadow: 0 0 10px #0000ff;
+}
+#content>ol{
+    margin-left: 3%;
+}
+/*Services End*/
+
+/*Home Start*/
+    .homeContainer{
+        background: rgba(50, 50, 100, 0.7);
+        position: fixed;
+        top:200px;
+        right: 0px;
+        width: 250px;
+        height: auto;
+        font-family:serif;
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        color: #18ffff;
+        text-shadow: 0 0 10px #0000ff;
+    }
+/*Home End*/
+/*Loader Start*/    
+    .loading{
+        background: transparent;        
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: #18ffff;
+        text-shadow: 0 0 10px #0000ff;  
+    }
+/*Loader End*/
+
+/*SOCIAL BUTTONS START*/
+    #socialButtons{
+        position: fixed;
+        bottom: 5%;
+    }
+    .socialIcon{
+        background: rgba(50, 50, 100, 0.7);
+        width: 60px;
+        height: 60px;
+        padding: 7px;
+    }
+    .socialIcon:hover{
+        padding: 0px;
+    }
+/*SOCIAL BUTTONS END*/
+/*NAVBAR START*/
+    nav {
+      background: rgba(50, 50, 100, 0.7);
+      z-index: 5;
+      position: absolute;      
+      font-family: serif;
+      text-shadow: 0 0 10px #0000ff;
+      top:0;
+      overflow-y: hidden;
+    }
+    .sidenav {
+      background: rgba(50, 50, 100, 0.5);
+      text-align: center;
+      padding-top: 7em;
+    }
+    .sidenav>li>a {
+      color: white;
+      font-size: 1.5em;
+    }
+/*NAVBAR END*/
+
+/* MODAL STYLING START */
+    .modal {
+      background: rgba(50, 50, 100, 0.7);
+      color: white;
+      text-shadow: 0 0 50px #0000ff;
+      text-align: center;
+      max-height: 80%;
+    }
+    .modal-content {
+      color: white;
+      text-shadow: 0 0 50px #0000ff;
+      /* font-size: 2em; */
+    }
+    .modal-content>p {
+      font-size: 1.5em;
+    }
+/* MODAL STYLIHNG END */
