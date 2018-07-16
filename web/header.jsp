@@ -50,18 +50,19 @@
                 <p>Please enter your credentials to login</p>
                 <p>Don't have an account yet? <a href="#signUpModal" class="modal-close modal-trigger">Sign Up</a> here!</p>
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" action="login" method="post">
                         <div class="row">
                             <div class="input-field col s12 offset-m2 m8">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate" required>
-                                <label for="icon_prefix">EMAIL</label>
+                                <input id="icon_prefix" type="text" name="username" class="validate" required>
+                                <label for="icon_prefix">USERNAME</label>
                             </div>
                             <div class="input-field col s12 offset-m2 m8">
                                 <i class="material-icons prefix">lock</i>
-                                <input id="icon_password" type="password" class="validate" required>
+                                <input id="icon_password" type="password" name="userpass" class="validate" required>
                                 <label for="icon_password">PASSWORD</label>
                             </div>
+                            <input type="text" value="user" name="who" hidden>
                             <div class="input-field col s12">
                                 <input type="submit" name="login" class="btn" value="Login">
                             </div>
@@ -116,18 +117,19 @@
                 <hr>
                 <p>Please enter your credentials to login</p>
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" action="login" method="post" >
                         <div class="row">
                             <div class="input-field col s12 offset-m2 m8">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate" required>
-                                <label for="icon_prefix">EMAIL</label>
+                                <input id="icon_prefix" type="text" name="username" class="validate" required>
+                                <label for="icon_prefix">USERNAME</label>
                             </div>
                             <div class="input-field col s12 offset-m2 m8">
                                 <i class="material-icons prefix">lock</i>
-                                <input id="icon_password" type="password" class="validate" required>
+                                <input id="icon_password" type="password" name="userpass" class="validate" required>
                                 <label for="icon_password">PASSWORD</label>
                             </div>
+                            <input type="text" value="manager" name="who" hidden>
                             <div class="input-field col s12">
                                 <input type="submit" name="login" class="btn" value="Login">
                             </div>
@@ -144,20 +146,21 @@
                 <hr>
                 <p>Please enter your credentials to login</p>
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" method="post" action="login">
                         <div class="row">
                             <div class="input-field col s12 offset-m2 m8">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate" required>
-                                <label for="icon_prefix">EMAIL</label>
+                                <input id="icon_prefix" type="text" class="validate" name="username" required>
+                                <label for="icon_prefix">USERNAME</label>
                             </div>
                             <div class="input-field col s12 offset-m2 m8">
                                 <i class="material-icons prefix">lock</i>
-                                <input id="icon_password" type="password" class="validate" required>
+                                <input id="icon_password" type="password" class="validate" name="userpass" required>
                                 <label for="icon_password">PASSWORD</label>
                             </div>
+                            <input type="text" value="admin" name="who" hidden>
                             <div class="input-field col s12">
-                                <input type="submit" name="login" class="btn" value="Login">
+                                <input type="submit" class="btn" value="Login">
                             </div>
                         </div>
                     </form>
